@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>KIKUCHIホールディングス株式会社</title>
-<meta name="description" content="決められないことを、決められる形にして返す。医療・開業の支援、住まいと土地の調査・企画、会社と家計のお金の地図。KIKUCHIホールディングス株式会社の公式サイトです。">
+<meta name="description" content="決められないことを、決められる形にして返す。住まいと事業の節目にいる人へ。医療・開業の支援、住まいと土地の調査・企画。KIKUCHIホールディングス株式会社の公式サイトです。">
 <meta property="og:title" content="KIKUCHIホールディングス株式会社">
 <meta property="og:description" content="決められないことを、決められる形にして返す。">
 <meta property="og:type" content="website">
@@ -20,11 +20,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Shippori+Mincho+B1:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
 <style>
-/* KHD コーポレートサイト v3（2026-11-02）。上場企業の定石の章立て×明朝の大見出し×金の筆記体の差し色。「霧を地図にする」を等高線で表す */
+/* KHD コーポレートサイト v4（2026-11-12 クリーム白×レンガ赤・言葉を絞った）。v3（2026-11-02）：上場企業の定石の章立て×明朝の大見出し×金の筆記体の差し色。「霧を地図にする」を等高線で表す */
 :root{
-  --ink:#1C2230; --ink-2:#3E4555; --ink-3:#6B7180; --paper:#FBFAF7; --band:#F3F0EA; --line:#E2DDD3; --line-2:#CFC8BB;
-  --gold:#B89A64; --gold-text:#8E7444; --night:#121722; --night-2:#1A2130; --on:#F6F3EC;
-  --f-display:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --ink:#1A1A1A; --ink-2:#3A3A3A; --ink-3:#6E6E6E; --paper:#F9F6EF; --band:#F1ECE1; --line:#DAD6CF; --line-2:#E1DACB;
+  --gold:#AA2E26; --gold-text:#AA2E26; --night:#8C241D; --night-2:#AA2E26; --on:#F9F6EF;
+  --f-display:"Hiragino Sans","Hiragino Kaku Gothic ProN","Zen Kaku Gothic New","Yu Gothic",sans-serif;
   --f-en:"Cormorant Garamond","Times New Roman",serif;
   --f-body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
   --ease:cubic-bezier(.22,.61,.36,1);
@@ -100,9 +100,10 @@ section.band{background:var(--band)}
 
 /* 理念 */
 #philosophy{text-align:center}
+.mission{margin-top:28px;font-size:.95rem;letter-spacing:.14em;color:var(--gold-text);font-weight:700}
 .creed{font-family:var(--f-display);font-weight:500;font-size:clamp(1.45rem,3.2vw,2.35rem);line-height:2.15;letter-spacing:.16em;margin-top:56px}
 .creed-sub{max-width:34em;margin:36px auto 0;color:var(--ink-3);font-size:.92rem;line-height:2.2}
-.values{display:grid;grid-template-columns:repeat(4,1fr);margin-top:88px;text-align:left}
+.values{display:grid;grid-template-columns:repeat(3,1fr);margin-top:88px;text-align:left}
 .values div{padding:6px 30px 0;border-left:1px solid var(--line-2);display:grid;gap:14px;align-content:start}
 .values div:last-child{border-right:1px solid var(--line-2)}
 .values .n{font-family:var(--f-en);font-style:italic;font-size:1.6rem;color:var(--gold)}
@@ -123,12 +124,13 @@ section.band{background:var(--band)}
 .plate .seal span{font-size:.66rem;letter-spacing:.3em;opacity:.75}
 .msg .lead2{font-family:var(--f-display);font-size:clamp(1.25rem,2.2vw,1.65rem);line-height:2;letter-spacing:.12em;margin-top:30px}
 .msg .body{display:grid;gap:22px;margin-top:30px;color:var(--ink-2);font-size:.95rem;line-height:2.15}
+.prof{margin-top:22px;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:.85rem;line-height:1.9;color:var(--ink-2)}.prof dt{color:var(--gold-text);letter-spacing:.12em;white-space:nowrap}.prof dd{margin:0}
 .sign{margin-top:34px;display:flex;align-items:baseline;gap:18px;font-family:var(--f-display);letter-spacing:.16em}
 .sign small{font-family:var(--f-body);font-size:.8rem;color:var(--ink-3)}
 @media (max-width:900px){.msg{grid-template-columns:1fr}.plate{aspect-ratio:16/10}}
 
 /* 事業 */
-.biz{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:64px}
+.biz{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:64px}
 .biz article{position:relative;background:#fff;border:1px solid var(--line);padding:42px 34px 38px;display:grid;gap:16px;align-content:start;transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
 .biz article::before{content:"";position:absolute;left:0;top:0;width:100%;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .7s var(--ease)}
 .biz article:hover{transform:translateY(-6px);box-shadow:0 22px 48px -28px rgba(28,34,48,.35)}
@@ -140,6 +142,8 @@ section.band{background:var(--band)}
 .biz li b{display:block;font-weight:500;font-size:.95rem}
 .biz li span{display:block;font-size:.84rem;color:var(--ink-3);line-height:1.95;margin-top:4px}
 @media (max-width:960px){.biz{grid-template-columns:1fr}}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.stats div{background:var(--night-2);color:var(--on);padding:22px 26px;display:grid;gap:4px}.stats b{font-family:var(--f-display);font-size:clamp(2rem,4vw,2.8rem);font-weight:700;line-height:1.15;letter-spacing:.02em}.stats span{font-size:.8rem;letter-spacing:.06em}
+@media (max-width:700px){.stats{grid-template-columns:1fr}}
 .own{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px}
 .own div{border:1px solid var(--line-2);padding:26px 30px;display:grid;gap:6px}
 .own b{font-family:var(--f-display);font-weight:600;letter-spacing:.12em}
@@ -200,7 +204,7 @@ table.co th{width:8.5em;font-weight:500;color:var(--ink-3);letter-spacing:.16em}
 #contact{background:var(--night);color:var(--on);position:relative;overflow:hidden}
 #contact canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.7}
 #contact .wrap{position:relative}
-#contact .kicker{color:var(--gold)}
+#contact .kicker{color:var(--on)}
 .lets{font-family:var(--f-en);font-style:italic;font-weight:400;font-size:clamp(2.6rem,7vw,5rem);color:var(--on);letter-spacing:.04em;line-height:1.2;margin-top:18px}
 .contact{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(40px,6vw,88px);margin-top:56px;align-items:start}
 .contact .say h3{font-size:clamp(1.3rem,2.4vw,1.75rem);letter-spacing:.12em;line-height:1.9}
@@ -208,7 +212,7 @@ table.co th{width:8.5em;font-weight:500;color:var(--ink-3);letter-spacing:.16em}
 .contact .say .cta{margin-top:34px}
 .contact .say .btn:hover{background:var(--on);color:var(--ink);border-color:var(--on)}
 .mail{display:grid;gap:14px}
-.mail .lbl{font-family:var(--f-en);letter-spacing:.3em;font-size:.85rem;color:var(--gold)}
+.mail .lbl{font-family:var(--f-en);letter-spacing:.3em;font-size:.85rem;color:var(--on);opacity:.8}
 .mail .addr{font-family:var(--f-en);font-size:1.45rem;letter-spacing:.06em;border-bottom:1px solid color-mix(in srgb,var(--on) 30%,transparent);padding-bottom:10px;user-select:all;overflow-wrap:anywhere}
 .tpl{border:1px solid color-mix(in srgb,var(--on) 18%,transparent);padding:18px 20px;display:grid;gap:10px}
 .tpl b{font-weight:500;font-size:.9rem;letter-spacing:.12em}
@@ -259,9 +263,8 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
   <div class="photo" aria-hidden="true"></div>
   <canvas id="fog" aria-hidden="true"></canvas>
   <div class="wrap">
-    <p class="tag en">Turning fog into a map.</p>
     <h1><span><i>決められないことを、</i></span><span><i>決められる形にして返す。</i></span></h1>
-    <p class="lead">開業や移転を考える医療者。家や土地のことで迷うご家族。お金の流れが見えない会社。KIKUCHIホールディングスは、登記・現地・計測・数字を自分たちで確かめ、選べる道を二つと期限に落とした「地図」をお渡しします。</p>
+    <p class="lead">開業や移転を考える医療者。住み替え・相続・空き家に迷うご家族。手放す時を考えるオーナー。KIKUCHIホールディングスは、登記・現地・計測・数字を自分たちで確かめ、選べる道を二つと期限に落とした「地図」をお渡しします。</p>
     <div class="cta"><a class="btn" href="#contact">ご相談・お問い合わせ<span class="ar"></span></a><a class="btn" href="#business">事業内容<span class="ar"></span></a></div>
   </div>
   <div class="scroll" aria-hidden="true"><i></i>SCROLL</div>
@@ -271,14 +274,15 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
 <section class="sec" id="philosophy">
   <div class="wrap">
     <p class="kicker center rv"><small>01</small> Philosophy</p>
+    <p class="mission rv d1">使命　節目にいる人の決断に寄り添い、決めてもらう。</p>
     <p class="creed rv d1">無駄を嫌い、使うものだけをつくる。<br>続けられる形でしか、大きくしない。</p>
     <p class="creed-sub rv d2">人が決められないのは、気持ちの問題ではありません。必要な事実がばらばらの場所にあり、一枚の上で比べられないからです。私たちはその事実を集め、決められる形にしてお返しします。</p>
     <div class="values">
-      <div class="rv"><span class="n">i.</span><h3>相手のもうけが先</h3><p>最初の一本は無料でお返しします。続けるかどうかは、形を見てから決めていただきます。</p></div>
-      <div class="rv d1"><span class="n">ii.</span><h3>霧を地図にする</h3><p>決められないことを、決められる形にして返す。それ以外の仕事はしません。</p></div>
-      <div class="rv d2"><span class="n">iii.</span><h3>時間は有限</h3><p>お金も時間も、入れるなら「いつ戻るか」と一緒に決めます。</p></div>
-      <div class="rv d3"><span class="n">iv.</span><h3>事実で返す</h3><p>確かめてから話します。分からないことは、分からないとお伝えします。</p></div>
+      <div class="rv"><span class="n">i.</span><h3>事実で返す</h3><p>登記・現地・数字を、自分たちで確かめてから話します。分からないことは、分からないと言います。</p></div>
+      <div class="rv d1"><span class="n">ii.</span><h3>道は二つ、期限は一つ</h3><p>選べる道を二つと、それぞれの結果、いつまでに決めるかを一枚でお返しします。</p></div>
+      <div class="rv d2"><span class="n">iii.</span><h3>決めるのはご本人</h3><p>急かしません。決めたあとは、最後まで伴走します。</p></div>
     </div>
+    <p class="creed-sub rv d3">一緒に仕事をしたいのは、約束と期限を守る方・事実と数字で話せる方・相手の得を先に考えられる方です。</p>
   </div>
 </section>
 
@@ -293,7 +297,11 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
         <p>私たちの仕事は、事実を集めて地図にすることです。登記を取り、現地に立ち、時間を計り、数字を並べる。そのうえで、選べる道を二つと、いつまでに決めるかをお返しします。</p>
         <p>大きくすることより、続けられることを大切にしています。使うものだけをつくり、家族との時間を守る働き方を、私たち自身も、一緒に働く人も続けていきます。</p>
       </div>
-      <p class="sign rv d3"><small>KIKUCHI HOLDINGS</small>代表</p>
+      <p class="sign rv d3"><small>KIKUCHI HOLDINGS</small>代表取締役　菊池</p>
+      <dl class="prof rv d3">
+        <dt>経歴</dt><dd>国立大学院（エネルギー分野）修了。財閥系の素材メーカーで次世代電池材料の研究開発と技術営業、計測機器の技術商社で技術営業（営業約300名から社長賞）。医療不動産会社の営業部長として、医療モールの開発・クリニックの承継・買取再販に携わる。2022年に当社を設立。</dd>
+        <dt>資格</dt><dd>宅地建物取引士／土地家屋調査士（勉強中）</dd>
+      </dl>
     </div>
   </div>
 </section>
@@ -302,18 +310,15 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
   <div class="wrap">
     <p class="kicker rv"><small>03</small> Business</p>
     <h2 class="h2 rv d1">事業内容</h2>
-    <p class="subtxt rv d1">三つの領域で、同じ「地図」をつくります。</p>
+    <p class="subtxt rv d1">住まいと医療の二つの節目で、判断の材料を一枚にまとめます。</p>
     <div class="biz">
-      <article class="rv"><div class="ph" style="background-image:url(img/biz1.jpg)" role="img" aria-label="クリニックの待合"></div><span class="no">01</span><h3>医療・開業の支援</h3><span class="for">医院・クリニック／施術所・サロン・教室</span>
+      <article class="rv"><div class="ph" style="background-image:url(img/biz1.jpg)" role="img" aria-label="クリニックの待合"></div><span class="no">01</span><h3>医療の開業・承継</h3><span class="for">医院・クリニック／施術所・サロン・教室</span>
         <ul><li><b>診療圏レポート</b><span>候補地で患者さんがどのくらい来そうかを、人口・競合・通院の動線で一枚に。</span></li>
         <li><b>時短の計測</b><span>カルテ入力・請求・予約の手間を現場で計り、どこを直すと時間が戻るかを示します。</span></li>
         <li><b>開業の整理</b><span>相場・お客さま・料金・届け出の順番を、開業日から逆算した工程表と一緒に。</span></li></ul></article>
       <article class="rv d1"><div class="ph" style="background-image:url(img/biz2.jpg)" role="img" aria-label="住宅街の通り"></div><span class="no">02</span><h3>住まいと土地の<br>調査・企画</h3><span class="for">実家・住み替え・相続・空き家</span>
         <ul><li><b>査定ノート</b><span>「売る・貸す・持つ」の三案を、成約事例と手残りで横に並べます。提示された価格の検算にも。</span></li>
         <li><b>空き家・古家の段取り</b><span>片付け・解体・登記・境界。何から決めればよいかを一枚に。売買・賃貸は免許のある提携先をご紹介します。</span></li></ul></article>
-      <article class="rv d2"><div class="ph" style="background-image:url(img/biz3.jpg)" role="img" aria-label="電卓と書類"></div><span class="no">03</span><h3>お金の地図</h3><span class="for">中小企業・個人事業・ご家庭</span>
-        <ul><li><b>入りと出の一枚</b><span>会社と家計のお金を一枚にし、必ず出る分と選べる分に分けます。</span></li>
-        <li><b>消費・投資・楽しみの見える化</b><span>何に使っているかを四つの札で分け、毎月一枚で確かめられる形にします。</span></li></ul></article>
     </div>
     <div class="own">
       <div class="rv"><b>賃貸住宅の保有・運営</b><span>自社で保有し、運営しています。調べて決める仕事を、自分たちの資産でも続けています。</span></div>
@@ -327,12 +332,12 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
     <p class="kicker rv"><small>04</small> Flow</p>
     <h2 class="h2 rv d1">ご相談の流れ</h2>
     <div class="flow">
-      <div class="rv"><h3>ご相談</h3><p>お困りのことを一行で。メールで十分です。</p></div>
-      <div class="rv d1"><h3>調査</h3><p>登記・現地・計測・数字を、先に自分たちで確かめます。</p></div>
-      <div class="rv d2"><h3>地図にしてお返し</h3><p>選べる道を二つと、それぞれの結果と期限をA4一枚に。</p></div>
-      <div class="rv d3"><h3>ご判断・伴走</h3><p>決めるのはご本人です。続ける場合だけ、条件を書面にして伴走します。</p></div>
+      <div class="rv"><h3>ご相談</h3><p>まずはお話をうかがいます。メールでも構いません。</p></div>
+      <div class="rv d1"><h3>調べる</h3><p>登記・現地・計測・数字を、先に自分たちで確かめます。</p></div>
+      <div class="rv d2"><h3>地図で返す</h3><p>選べる道を二つと、それぞれの結果と期限をA4一枚に。</p></div>
+      <div class="rv d3"><h3>決めて、伴走</h3><p>決めるのはご本人です。続ける場合だけ、条件を書面にして伴走します。</p></div>
     </div>
-    <div class="promise rv"><span class="en">Our promise</span><p>最初の一本は無料です。費用がかかるお仕事は、始める前に条件を一枚の書面にしてお渡しし、途中で変えることはありません。</p></div>
+    <div class="promise rv"><span class="en">Our promise</span><p>費用がかかるお仕事は、始める前に条件を一枚の書面にしてお渡しし、途中で変えることはありません。</p></div>
   </div>
 </section>
 
@@ -340,7 +345,12 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
   <div class="wrap">
     <p class="kicker rv"><small>05</small> Cases</p>
     <h2 class="h2 rv d1">実例</h2>
-    <p class="subtxt rv d1">守秘のため、お名前と数字は伏せています。</p>
+    <p class="subtxt rv d1">守秘のため、お名前と所在は伏せています。</p>
+    <div class="stats rv d1">
+      <div><span>仕入れ値からの売却</span><b>8.9倍</b><span>70万円の古家 → 620万円</span></div>
+      <div><span>仕入れから売却まで</span><b>17日</b><span>弁護士が売主の相続物件</span></div>
+      <div><span>1件の調達額</span><b>1.2億円</b><span>全額融資・2か月で売却</span></div>
+    </div>
     <div class="cases">
       <article class="rv"><span class="tag">MEDICAL — TOKYO</span><h3>クリニックの事務の手間を減らす</h3>
         <dl><dt>取り組み</dt><dd>事務と看護の方へのアンケートから、残業の原因を「待ち時間」と「入力」に絞り、入力を機器と仕組みで減らしました。</dd><dt>成果</dt><dd>減った手間の一部を報酬とする形で、継続してご依頼いただいています。</dd></dl></article>
@@ -360,14 +370,16 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
       <table class="co rv"><tbody>
         <tr><th>商号</th><td>KIKUCHIホールディングス株式会社<br><span style="color:var(--ink-3);font-size:.85em">KIKUCHI HOLDINGS Co., Ltd.</span></td></tr>
         <tr><th>設立</th><td>2022年9月</td></tr>
+        <tr><th>代表者</th><td>代表取締役　菊池</td></tr>
         <tr><th>所在地</th><td>東京都江東区</td></tr>
         <tr><th>拠点</th><td>東京・千葉</td></tr>
-        <tr><th>事業内容</th><td>医療機関・施術所の開業と運営の支援／住まいと土地の調査・企画／会社と家計のお金の整理の支援／賃貸住宅の保有・運営／訪問マッサージ事業</td></tr>
+        <tr><th>事業内容</th><td>住まいと土地の調査・企画／医療の開業・承継の支援／賃貸住宅の保有・運営／訪問マッサージ（医療保険・加盟店）</td></tr>
         <tr><th>お問い合わせ</th><td><a href="mailto:ec-seller@kikuchi-hd.net">ec-seller@kikuchi-hd.net</a></td></tr>
       </tbody></table>
       <ol class="hist rv d1">
         <li><time>2022.09</time>KIKUCHIホールディングス株式会社を設立</li>
-        <li><time>2026.10</time>相談窓口「霧を地図にする相談」を開設</li>
+        <li><time>2026.01</time>代表が当社の経営に専念</li>
+        <li><time>2026.10</time>相談窓口を開設</li>
         <li><time>2026.12</time>千葉県で訪問マッサージ事業を開始（予定）</li>
       </ol>
     </div>
@@ -380,7 +392,7 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
     <h2 class="h2 rv d1">お知らせ</h2>
     <ul class="news rv d1">
       <li><time>2026.11.02</time><span class="cat">お知らせ</span><span>コーポレートサイトをリニューアルしました。</span></li>
-      <li><time>2026.10.28</time><span class="cat">サービス</span><span>相談窓口「霧を地図にする相談」を開設しました。最初の一本は無料です。</span></li>
+      <li><time>2026.10.28</time><span class="cat">サービス</span><span>相談窓口を開設しました。</span></li>
     </ul>
   </div>
 </section>
@@ -406,7 +418,7 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
     <div class="contact">
       <div class="say rv">
         <h3>「売る？ 貸す？ 開く？」が<br>決まらないなら。</h3>
-        <p>右の文面をコピーして、メールでお送りください。3営業日以内にお返事します。最初の一本は無料です。</p>
+        <p>右の文面をコピーして、メールでお送りください。3営業日以内にお返事します。</p>
         <div class="cta"><a class="btn" href="#t2">土地・家のご相談の文面へ<span class="ar"></span></a></div>
       </div>
       <div class="mail rv d1">
