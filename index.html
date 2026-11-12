@@ -173,6 +173,8 @@ section.band{background:var(--band)}
 .cases dt{font-size:.75rem;letter-spacing:.2em;color:var(--ink-3)}
 .cases dd{margin:0 0 6px;color:var(--ink-2);line-height:1.95}
 @media (max-width:960px){.cases{grid-template-columns:1fr}}
+.cases h3 a,.cases dd a{text-decoration:none;border-bottom:1px solid var(--ink-3);padding-bottom:2px}
+.cases h3 a:hover,.cases dd a:hover{border-bottom-color:var(--ink)}
 
 /* 会社概要 */
 .co-grid{display:grid;grid-template-columns:3fr 2fr;gap:clamp(40px,6vw,80px);margin-top:64px}
@@ -251,6 +253,7 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
       <li class="sub"><a href="#message">代表メッセージ</a></li>
       <li><a href="#business">事業内容</a></li>
       <li class="sub"><a href="#cases">実例</a></li>
+      <li class="sub"><a href="#column">コラム</a></li>
       <li><a href="#company">会社概要</a></li>
       <li class="sub"><a href="#recruit">採用</a></li>
       <li><a class="go" href="#contact">ご相談</a></li>
@@ -362,9 +365,25 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
   </div>
 </section>
 
-<section class="sec band" id="company">
+<section class="sec band" id="column">
   <div class="wrap">
-    <p class="kicker rv"><small>06</small> Company</p>
+    <p class="kicker rv"><small>06</small> Column</p>
+    <h2 class="h2 rv d1">コラム</h2>
+    <p class="subtxt rv d1">現場で確かめたことを、noteに書いています。</p>
+    <div class="cases">
+      <article class="rv"><span class="tag">MEDICAL</span><h3><a href="https://note.com/kemkemsp/m/m4c6af59e1adf" target="_blank" rel="noopener">医院開業と不動産</a></h3>
+        <dl><dt>開業・移転を考える先生へ</dt><dd><a href="https://note.com/kemkemsp/n/n121a80650ead" target="_blank" rel="noopener">なぜ医師は開業で失敗するのか</a></dd><dd><a href="https://note.com/kemkemsp/n/n92551933903a" target="_blank" rel="noopener">診療圏調査の正しいやり方</a></dd><dd><a href="https://note.com/kemkemsp/n/n0edbe6e599f7" target="_blank" rel="noopener">クリニック開業の賃料交渉</a></dd></dl></article>
+      <article class="rv d1"><span class="tag">REAL ESTATE</span><h3><a href="https://note.com/kemkemsp/m/m85a008377479" target="_blank" rel="noopener">不動産を持つ人の手順書</a></h3>
+        <dl><dt>地主・大家・相続の方へ</dt><dd><a href="https://note.com/kemkemsp/n/n66cd474166b8" target="_blank" rel="noopener">変動金利の「元金が減らなくなる線」</a></dd><dd><a href="https://note.com/kemkemsp/n/n2e62a75f8050" target="_blank" rel="noopener">買ったら最初の30日でやる12項目</a></dd><dd><a href="https://note.com/kemkemsp/n/n652682b578d2" target="_blank" rel="noopener">許可・決済・登記の3段</a></dd></dl></article>
+      <article class="rv d2"><span class="tag">CASES</span><h3><a href="https://note.com/kemkemsp/m/m28e67d44152a" target="_blank" rel="noopener">実例のミソ</a></h3>
+        <dl><dt>難しい物件が売れた理由</dt><dd><a href="https://note.com/kemkemsp/n/n842da1611e22" target="_blank" rel="noopener">買う前に、売る相手が決まっていた</a></dd><dd><a href="https://note.com/kemkemsp/n/n141baf829a06" target="_blank" rel="noopener">相続人5人・築53年の団地</a></dd><dd><a href="https://note.com/kemkemsp/n/n4d8c3e0506cc" target="_blank" rel="noopener">任意売却の区分マンション</a></dd></dl></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="company">
+  <div class="wrap">
+    <p class="kicker rv"><small>07</small> Company</p>
     <h2 class="h2 rv d1">会社概要</h2>
     <div class="co-grid">
       <table class="co rv"><tbody>
@@ -386,20 +405,21 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
   </div>
 </section>
 
-<section class="sec" id="news">
+<section class="sec band" id="news">
   <div class="wrap">
-    <p class="kicker rv"><small>07</small> News</p>
+    <p class="kicker rv"><small>08</small> News</p>
     <h2 class="h2 rv d1">お知らせ</h2>
     <ul class="news rv d1">
+      <li><time>2026.11.12</time><span class="cat">お知らせ</span><span>コラム（note）の掲載を始めました。</span></li>
       <li><time>2026.11.02</time><span class="cat">お知らせ</span><span>コーポレートサイトをリニューアルしました。</span></li>
       <li><time>2026.10.28</time><span class="cat">サービス</span><span>相談窓口を開設しました。</span></li>
     </ul>
   </div>
 </section>
 
-<section class="sec band" id="recruit">
+<section class="sec" id="recruit">
   <div class="wrap">
-    <p class="kicker rv"><small>08</small> Recruit</p>
+    <p class="kicker rv"><small>09</small> Recruit</p>
     <h2 class="h2 rv d1">採用情報</h2>
     <p class="subtxt rv d1">家族の時間を守る働き方を、一緒に続けられる方を。</p>
     <div class="jobs">
@@ -410,10 +430,10 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
   </div>
 </section>
 
-<section class="sec" id="contact">
+<section class="sec band" id="contact">
   <canvas id="fog2" aria-hidden="true"></canvas>
   <div class="wrap">
-    <p class="kicker rv"><small>09</small> Contact</p>
+    <p class="kicker rv"><small>10</small> Contact</p>
     <p class="lets rv d1">Let’s talk.</p>
     <div class="contact">
       <div class="say rv">
@@ -448,7 +468,7 @@ footer small{font-family:var(--f-en);letter-spacing:.2em;font-size:.8rem}
   <div class="wrap">
     <div class="row">
       <a class="mark" href="#top"><b>KHD</b><span>KIKUCHI HOLDINGS</span></a>
-      <div class="fl"><a href="#philosophy">企業理念</a><a href="#message">代表メッセージ</a><a href="#business">事業内容</a><a href="#cases">実例</a><a href="#company">会社概要</a><a href="#recruit">採用情報</a><a href="#contact">ご相談</a></div>
+      <div class="fl"><a href="#philosophy">企業理念</a><a href="#message">代表メッセージ</a><a href="#business">事業内容</a><a href="#cases">実例</a><a href="#column">コラム</a><a href="#company">会社概要</a><a href="#recruit">採用情報</a><a href="#contact">ご相談</a></div>
     </div>
     <details class="pp"><summary>個人情報の取り扱い</summary>
       <p>いただいたお名前・ご連絡先・ご相談の内容は、ご相談へのお返事と、ご依頼いただいた業務のためだけに使います。法令にもとづく場合を除き、ご本人の同意なく第三者に提供することはありません。お問い合わせ先：KIKUCHIホールディングス株式会社（ec-seller@kikuchi-hd.net）</p></details>
